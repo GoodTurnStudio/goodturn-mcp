@@ -189,7 +189,7 @@ export const PRODUCTS = [
       "share_zakatable_pct": {
        "type": "number",
        "minimum": 0,
-       "description": ""
+       "description": "Share of long-term holdings treated as zakatable, default 25"
       },
       "business_stock": {
        "type": "number",
@@ -300,7 +300,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "A product, brand or barcode to look up, for example Haribo Starmix or 5000159484695."
       },
       "country": {
        "type": "string",
@@ -327,14 +328,16 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "name": {
-       "type": "string"
+       "type": "string",
+       "description": "The ingredient or E-number, for example E471, carmine, gelatin or alcohol denat."
       },
       "context": {
        "type": "string",
        "enum": [
         "food",
         "cosmetic"
-       ]
+       ],
+       "description": "Whether the ingredient is in food or a cosmetic. Defaults to food."
       }
      },
      "required": [
@@ -355,7 +358,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "ticker": {
-       "type": "string"
+       "type": "string",
+       "description": "A US stock ticker, for example AAPL or TSLA."
       }
      },
      "required": [
@@ -469,17 +473,20 @@ export const PRODUCTS = [
      "properties": {
       "city": {
        "type": "string",
-       "description": "For example: Dearborn, Michigan"
+       "description": "City name, for example London or Chicago, IL."
       },
       "lat": {
-       "type": "number"
+       "type": "number",
+       "description": "Latitude of the place, in decimal degrees. Use with lon instead of city."
       },
       "lon": {
-       "type": "number"
+       "type": "number",
+       "description": "Longitude of the place, in decimal degrees. Use with lat instead of city."
       },
       "date": {
        "type": "string",
-       "format": "date"
+       "format": "date",
+       "description": "The day, YYYY-MM-DD. Defaults to today."
       },
       "method": {
        "type": "string",
@@ -490,7 +497,8 @@ export const PRODUCTS = [
         "egypt",
         "karachi",
         "moonsighting"
-       ]
+       ],
+       "description": "Calculation method: isna (North America), mwl (Muslim World League), umm_al_qura, egypt, karachi or moonsighting."
       }
      },
      "required": [],
@@ -516,7 +524,8 @@ export const PRODUCTS = [
         "medicine",
         "food",
         "life"
-       ]
+       ],
+       "description": "Only topics in this area: money, crypto, medicine, food or life."
       }
      },
      "required": [],
@@ -598,10 +607,12 @@ export const PRODUCTS = [
        "description": "Return month or date"
       },
       "one_way": {
-       "type": "boolean"
+       "type": "boolean",
+       "description": "True for one-way fares only."
       },
       "nonstop": {
-       "type": "boolean"
+       "type": "boolean",
+       "description": "True for direct flights only."
       },
       "max_price": {
        "type": "number",
@@ -610,7 +621,8 @@ export const PRODUCTS = [
       "limit": {
        "type": "integer",
        "minimum": 1,
-       "maximum": 20
+       "maximum": 20,
+       "description": "How many deals to return, 1 to 20."
       },
       "country": {
        "type": "string",
@@ -674,7 +686,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "A city or airport name or code, for example Lisbon or LIS."
       }
      },
      "required": [
@@ -772,13 +785,15 @@ export const PRODUCTS = [
      "properties": {
       "city": {
        "type": "string",
-       "description": "For example: Austin, Texas"
+       "description": "The city to plan the day in, for example Manchester or Austin, TX. Leave out with lat and lon for a random city."
       },
       "lat": {
-       "type": "number"
+       "type": "number",
+       "description": "Latitude, in decimal degrees, instead of city."
       },
       "lon": {
-       "type": "number"
+       "type": "number",
+       "description": "Longitude, in decimal degrees, instead of city."
       },
       "vibe": {
        "type": "string",
@@ -789,14 +804,16 @@ export const PRODUCTS = [
         "family",
         "culture",
         "foodie"
-       ]
+       ],
+       "description": "The feel of the day: chill, adventure, date, family, culture or foodie."
       },
       "budget": {
        "type": "string",
        "enum": [
         "any",
         "free"
-       ]
+       ],
+       "description": "any, or free for free things only."
       },
       "diet": {
        "type": "string",
@@ -1398,12 +1415,14 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "nutrient": {
-       "type": "string"
+       "type": "string",
+       "description": "The vitamin, mineral or supplement, for example vitamin D, magnesium or melatonin."
       },
       "amount": {
        "type": "number",
        "minimum": 0,
-       "maximum": 10000000
+       "maximum": 10000000,
+       "description": "The amount taken per day, in the unit given."
       },
       "unit": {
        "type": "string",
@@ -1549,13 +1568,16 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "goal": {
-       "type": "string"
+       "type": "string",
+       "description": "high protein, low carb, budget, quick or high fibre."
       },
       "diet": {
-       "type": "string"
+       "type": "string",
+       "description": "vegetarian, vegan, pescatarian or halal."
       },
       "meal": {
-       "type": "string"
+       "type": "string",
+       "description": "breakfast, lunch, dinner or snack."
       },
       "q": {
        "type": "string",
@@ -1664,7 +1686,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "name": {
-       "type": "string"
+       "type": "string",
+       "description": "The exercise, for example Romanian deadlift or push-up."
       }
      },
      "required": [
@@ -2534,10 +2557,12 @@ export const PRODUCTS = [
        "description": "Which item in the picture, for example \"the camel coat\". Results must match it, and it is used as a fallback text search."
       },
       "size": {
-       "type": "string"
+       "type": "string",
+       "description": "Clothing or shoe size to match, for example M, 10 or UK 8."
       },
       "max_price": {
-       "type": "number"
+       "type": "number",
+       "description": "Highest price, in the local currency."
       },
       "condition": {
        "type": "string",
@@ -2545,10 +2570,12 @@ export const PRODUCTS = [
         "any",
         "new",
         "used"
-       ]
+       ],
+       "description": "any, new or used."
       },
       "country": {
-       "type": "string"
+       "type": "string",
+       "description": "Two-letter country code for the eBay site and currency, for example US or GB."
       }
      },
      "required": [
@@ -2622,7 +2649,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "team": {
-       "type": "string"
+       "type": "string",
+       "description": "A club name, for example Liverpool or Real Madrid."
       },
       "league": {
        "type": "string",
@@ -2657,7 +2685,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "team": {
-       "type": "string"
+       "type": "string",
+       "description": "A club name, for example Liverpool or Real Madrid."
       },
       "league": {
        "type": "string",
@@ -2710,7 +2739,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "home": {
-       "type": "string"
+       "type": "string",
+       "description": "The home club, for example Arsenal."
       },
       "away": {
        "type": "string",
@@ -2767,7 +2797,8 @@ export const PRODUCTS = [
        "description": "The book's title, 2 to 120 characters. Add author for very short or common titles."
       },
       "author": {
-       "type": "string"
+       "type": "string",
+       "description": "The author's name, to pin down the right book or list their books."
       },
       "country": {
        "type": "string",
@@ -2800,17 +2831,20 @@ export const PRODUCTS = [
        "description": "A book the user liked, 2 to 120 characters."
       },
       "author": {
-       "type": "string"
+       "type": "string",
+       "description": "The author's name, to pin down the right book or list their books."
       },
       "subject": {
        "type": "string",
        "description": "A genre or theme, for example space opera, cozy mystery, heist."
       },
       "same_author": {
-       "type": "boolean"
+       "type": "boolean",
+       "description": "True to include more books by the same author."
       },
       "country": {
-       "type": "string"
+       "type": "string",
+       "description": "Two-letter country code for the shop links, for example US or GB."
       }
      },
      "required": [],
@@ -2830,7 +2864,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "author": {
-       "type": "string"
+       "type": "string",
+       "description": "The author's name, to pin down the right book or list their books."
       },
       "country": {
        "type": "string",
@@ -2924,7 +2959,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words to search for, for example kindness or Shabbat."
       }
      },
      "required": [
@@ -3119,7 +3155,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words or a bani's name to search for, for example Japji or humility."
       }
      },
      "required": [
@@ -3142,7 +3179,8 @@ export const PRODUCTS = [
       "ang": {
        "type": "integer",
        "minimum": 1,
-       "maximum": 1430
+       "maximum": 1430,
+       "description": "The Ang (page) of Sri Guru Granth Sahib, 1 to 1430."
       }
      },
      "required": [
@@ -3163,7 +3201,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "id": {
-       "type": "integer"
+       "type": "integer",
+       "description": "A BaniDB shabad ID."
       }
      },
      "required": [
@@ -3336,7 +3375,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words to search for, for example duty or fear."
       }
      },
      "required": [
@@ -3360,7 +3400,8 @@ export const PRODUCTS = [
       "chapter": {
        "type": "integer",
        "minimum": 1,
-       "maximum": 18
+       "maximum": 18,
+       "description": "Chapter number, 1 to 18."
       },
       "verse": {
        "type": "string",
@@ -3388,7 +3429,8 @@ export const PRODUCTS = [
       "chapter": {
        "type": "integer",
        "minimum": 1,
-       "maximum": 18
+       "maximum": 18,
+       "description": "Chapter number, 1 to 18."
       }
      },
      "required": [
@@ -3561,7 +3603,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words or a name to search for, for example Loki or Persephone."
       }
      },
      "required": [
@@ -3734,7 +3777,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words to search for, for example anger or death."
       }
      },
      "required": [
@@ -3907,7 +3951,8 @@ export const PRODUCTS = [
      "type": "object",
      "properties": {
       "q": {
-       "type": "string"
+       "type": "string",
+       "description": "Words to search for, for example forgiveness or shepherd."
       }
      },
      "required": [

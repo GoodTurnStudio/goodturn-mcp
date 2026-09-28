@@ -51,6 +51,53 @@ TITLES = {
 }
 
 
+# Plain descriptions for inputs the product specs leave undescribed (tool-quality scores and the Docker catalog check every input).
+PARAM_DESC = {
+    ("halalornot", "q"): "A product, brand or barcode to look up, for example Haribo Starmix or 5000159484695.",
+    ("halalornot", "name"): "The ingredient or E-number, for example E471, carmine, gelatin or alcohol denat.",
+    ("halalornot", "context"): "Whether the ingredient is in food or a cosmetic. Defaults to food.",
+    ("halalornot", "ticker"): "A US stock ticker, for example AAPL or TSLA.",
+    ("halalornot", "lat"): "Latitude of the place, in decimal degrees. Use with lon instead of city.",
+    ("halalornot", "lon"): "Longitude of the place, in decimal degrees. Use with lat instead of city.",
+    ("halalornot", "date"): "The day, YYYY-MM-DD. Defaults to today.",
+    ("halalornot", "method"): "Calculation method: isna (North America), mwl (Muslim World League), umm_al_qura, egypt, karachi or moonsighting.",
+    ("halalornot", "category"): "Only topics in this area: money, crypto, medicine, food or life.",
+    ("halalornot", "city"): "City name, for example London or Chicago, IL.",
+    ("faredeals", "one_way"): "True for one-way fares only.",
+    ("faredeals", "nonstop"): "True for direct flights only.",
+    ("faredeals", "limit"): "How many deals to return, 1 to 20.",
+    ("faredeals", "q"): "A city or airport name or code, for example Lisbon or LIS.",
+    ("spinmyday", "city"): "The city to plan the day in, for example Manchester or Austin, TX. Leave out with lat and lon for a random city.",
+    ("spinmyday", "lat"): "Latitude, in decimal degrees, instead of city.",
+    ("spinmyday", "lon"): "Longitude, in decimal degrees, instead of city.",
+    ("spinmyday", "vibe"): "The feel of the day: chill, adventure, date, family, culture or foodie.",
+    ("spinmyday", "budget"): "any, or free for free things only.",
+    ("supplementcheck", "nutrient"): "The vitamin, mineral or supplement, for example vitamin D, magnesium or melatonin.",
+    ("supplementcheck", "amount"): "The amount taken per day, in the unit given.",
+    ("platepal", "goal"): "high protein, low carb, budget, quick or high fibre.",
+    ("platepal", "diet"): "vegetarian, vegan, pescatarian or halal.",
+    ("platepal", "meal"): "breakfast, lunch, dinner or snack.",
+    ("planmyworkout", "name"): "The exercise, for example Romanian deadlift or push-up.",
+    ("wardrobeconnect", "size"): "Clothing or shoe size to match, for example M, 10 or UK 8.",
+    ("wardrobeconnect", "max_price"): "Highest price, in the local currency.",
+    ("wardrobeconnect", "condition"): "any, new or used.",
+    ("wardrobeconnect", "country"): "Two-letter country code for the eBay site and currency, for example US or GB.",
+    ("formguide", "team"): "A club name, for example Liverpool or Real Madrid.",
+    ("formguide", "home"): "The home club, for example Arsenal.",
+    ("bookslikethis", "author"): "The author's name, to pin down the right book or list their books.",
+    ("bookslikethis", "same_author"): "True to include more books by the same author.",
+    ("bookslikethis", "country"): "Two-letter country code for the shop links, for example US or GB.",
+    ("talmud", "q"): "Words to search for, for example kindness or Shabbat.",
+    ("gurbani", "q"): "Words or a bani's name to search for, for example Japji or humility.",
+    ("gurbani", "ang"): "The Ang (page) of Sri Guru Granth Sahib, 1 to 1430.",
+    ("gurbani", "id"): "A BaniDB shabad ID.",
+    ("gita", "q"): "Words to search for, for example duty or fear.",
+    ("gita", "chapter"): "Chapter number, 1 to 18.",
+    ("lore", "q"): "Words or a name to search for, for example Loki or Persephone.",
+    ("stoics", "q"): "Words to search for, for example anger or death.",
+    ("bible", "q"): "Words to search for, for example forgiveness or shepherd.",
+}
+
 def snake(op):
     s = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", op)
     return re.sub(r"[^a-z0-9_]", "_", s.lower())
@@ -77,7 +124,7 @@ def clean(text):
         if "kit links are suggestions" in low:
             continue
         # Drop sentences that tell the model how to behave (directory rule); keep ones about inputs and outputs.
-        if re.match(r"(read|offer|present|always|never|ask for|say next|share)\b", low):
+        if re.match(r"(read|offer|present|always|never|ask for|say next|share (the|this|it|a) )\b", low):
             continue
         sent = re.sub(r":\s*read out the say line and offer[^.]*", ".", sent)
         keep.append(sent)
@@ -141,8 +188,11 @@ def build(offline):
                     for k in list(schema):
                         if k not in ("type", "enum", "default", "minimum", "maximum", "format", "items"):
                             schema.pop(k)
-                    if p.get("description"):
-                        schema["description"] = clean(p["description"])[:600]
+                    pdesc = clean(p.get("description") or "")[:600]
+                    if pdesc:
+                        schema["description"] = pdesc
+                    elif (slug, pname) in PARAM_DESC:
+                        schema["description"] = PARAM_DESC[(slug, pname)]
                     elif p.get("example") is not None:
                         schema["description"] = "For example: " + str(p["example"])
                     props[pname] = schema
