@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "platepal": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/platepal/mcp"
+    },
+    "supplementcheck": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/supplementcheck/mcp"
+    },
+    "planmyworkout": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/planmyworkout/mcp"
+    },
+    "syncmycycle": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/syncmycycle/mcp"
+    },
+    "medbillcheck": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/medbillcheck/mcp"
+    },
+    "appealmyclaim": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/appealmyclaim/mcp"
+    }
+  }
+}

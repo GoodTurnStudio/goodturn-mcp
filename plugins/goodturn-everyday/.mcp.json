@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "faredeals": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/faredeals/mcp"
+    },
+    "spinmyday": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/spinmyday/mcp"
+    },
+    "jobspotter": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/jobspotter/mcp"
+    },
+    "wardrobeconnect": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/wardrobeconnect/mcp"
+    },
+    "formguide": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/formguide/mcp"
+    },
+    "bookslikethis": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/bookslikethis/mcp"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "goodturn-money",
+  "version": "1.0.0",
+  "description": "Everyday money helpers: cancel subscriptions, lower bills, claim price drops, find unclaimed money and check the lowest price.",
+  "author": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "homepage": "https://goodturn-mcp.pages.dev",
+  "repository": "https://github.com/GoodTurnStudio/goodturn-mcp",
+  "license": "MIT",
+  "keywords": [
+    "cancelmysub",
+    "lowermybill",
+    "pricedropback",
+    "findmymoney",
+    "cheapestprice"
+  ]
+}

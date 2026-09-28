@@ -1,0 +1,20 @@
+{
+  "name": "goodturn-health",
+  "version": "1.0.0",
+  "description": "Nutrition, supplements, workouts and cycle phases, plus help with US medical bills and insurance appeals.",
+  "author": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "homepage": "https://goodturn-mcp.pages.dev",
+  "repository": "https://github.com/GoodTurnStudio/goodturn-mcp",
+  "license": "MIT",
+  "keywords": [
+    "platepal",
+    "supplementcheck",
+    "planmyworkout",
+    "syncmycycle",
+    "medbillcheck",
+    "appealmyclaim"
+  ]
+}

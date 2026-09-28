@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "cancelmysub": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/cancelmysub/mcp"
+    },
+    "lowermybill": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/lowermybill/mcp"
+    },
+    "pricedropback": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/pricedropback/mcp"
+    },
+    "findmymoney": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/findmymoney/mcp"
+    },
+    "cheapestprice": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/cheapestprice/mcp"
+    }
+  }
+}

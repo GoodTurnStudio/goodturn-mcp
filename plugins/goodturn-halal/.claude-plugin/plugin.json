@@ -1,0 +1,16 @@
+{
+  "name": "goodturn-halal",
+  "version": "1.0.0",
+  "description": "Halal checks for food, medicines, stocks, funds and crypto, and Shariah screening of US stocks under four standards.",
+  "author": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "homepage": "https://goodturn-mcp.pages.dev",
+  "repository": "https://github.com/GoodTurnStudio/goodturn-mcp",
+  "license": "MIT",
+  "keywords": [
+    "halalornot",
+    "mizan"
+  ]
+}

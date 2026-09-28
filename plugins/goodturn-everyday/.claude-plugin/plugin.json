@@ -1,0 +1,20 @@
+{
+  "name": "goodturn-everyday",
+  "version": "1.0.0",
+  "description": "Cheap flights, a day out anywhere, jobs, clothes, football and books.",
+  "author": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "homepage": "https://goodturn-mcp.pages.dev",
+  "repository": "https://github.com/GoodTurnStudio/goodturn-mcp",
+  "license": "MIT",
+  "keywords": [
+    "faredeals",
+    "spinmyday",
+    "jobspotter",
+    "wardrobeconnect",
+    "formguide",
+    "bookslikethis"
+  ]
+}

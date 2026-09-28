@@ -1,0 +1,20 @@
+{
+  "name": "goodturn-scripture",
+  "version": "1.0.0",
+  "description": "Daily readings, explanations and whole books from the Talmud, Gurbani, Bhagavad Gita, Bible, Greek and Norse myth and the Stoics.",
+  "author": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "homepage": "https://goodturn-mcp.pages.dev",
+  "repository": "https://github.com/GoodTurnStudio/goodturn-mcp",
+  "license": "MIT",
+  "keywords": [
+    "talmud",
+    "gurbani",
+    "gita",
+    "bible",
+    "lore",
+    "stoics"
+  ]
+}

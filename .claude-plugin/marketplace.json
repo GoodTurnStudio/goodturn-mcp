@@ -1,0 +1,68 @@
+{
+  "name": "goodturn",
+  "owner": {
+    "name": "Good Turn Studio",
+    "email": "hello@goodturnstudio.com"
+  },
+  "metadata": {
+    "description": "Free, read-only everyday helpers by Good Turn Studio, as Claude plugins.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "goodturn-money",
+      "source": "./plugins/goodturn-money",
+      "description": "Everyday money helpers: cancel subscriptions, lower bills, claim price drops, find unclaimed money and check the lowest price.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Good Turn Studio"
+      },
+      "homepage": "https://goodturn-mcp.pages.dev",
+      "license": "MIT"
+    },
+    {
+      "name": "goodturn-halal",
+      "source": "./plugins/goodturn-halal",
+      "description": "Halal checks for food, medicines, stocks, funds and crypto, and Shariah screening of US stocks under four standards.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Good Turn Studio"
+      },
+      "homepage": "https://goodturn-mcp.pages.dev",
+      "license": "MIT"
+    },
+    {
+      "name": "goodturn-health",
+      "source": "./plugins/goodturn-health",
+      "description": "Nutrition, supplements, workouts and cycle phases, plus help with US medical bills and insurance appeals.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Good Turn Studio"
+      },
+      "homepage": "https://goodturn-mcp.pages.dev",
+      "license": "MIT"
+    },
+    {
+      "name": "goodturn-everyday",
+      "source": "./plugins/goodturn-everyday",
+      "description": "Cheap flights, a day out anywhere, jobs, clothes, football and books.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Good Turn Studio"
+      },
+      "homepage": "https://goodturn-mcp.pages.dev",
+      "license": "MIT"
+    },
+    {
+      "name": "goodturn-scripture",
+      "source": "./plugins/goodturn-scripture",
+      "description": "Daily readings, explanations and whole books from the Talmud, Gurbani, Bhagavad Gita, Bible, Greek and Norse myth and the Stoics.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Good Turn Studio"
+      },
+      "homepage": "https://goodturn-mcp.pages.dev",
+      "license": "MIT"
+    }
+  ]
+}

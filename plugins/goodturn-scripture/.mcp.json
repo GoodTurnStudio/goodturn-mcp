@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "talmud": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/talmud/mcp"
+    },
+    "gurbani": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/gurbani/mcp"
+    },
+    "gita": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/gita/mcp"
+    },
+    "bible": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/bible/mcp"
+    },
+    "lore": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/lore/mcp"
+    },
+    "stoics": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/stoics/mcp"
+    }
+  }
+}

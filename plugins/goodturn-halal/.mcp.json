@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "halalornot": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/halalornot/mcp"
+    },
+    "mizan": {
+      "type": "http",
+      "url": "https://goodturn-mcp.pages.dev/mizan/mcp"
+    }
+  }
+}

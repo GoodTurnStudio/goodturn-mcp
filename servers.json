@@ -1,0 +1,704 @@
+[
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/all",
+    "title": "Good Turn Studio (all tools)",
+    "description": "All 25 Good Turn Studio helpers in one server: money, health, jobs, travel, halal and scripture.",
+    "version": "1.0.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/goodturn.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/all/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/appealmyclaim",
+    "title": "Appeal My Claim",
+    "description": "Appeal a denied US health insurance claim: denial codes, rights, deadlines and a draft letter.",
+    "version": "1.1.1",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/appealmyclaim",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/appealmyclaim.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/appealmyclaim/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/bible",
+    "title": "Bible Swipe",
+    "description": "A Bible reading a day, line by line, any passage by reference, and search.",
+    "version": "1.1.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/bible",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/bible.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/bible/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/bookslikethis",
+    "title": "Books Like This",
+    "description": "Books like one you enjoyed, a book's details and any film of it, and an author's books.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/bookslikethis",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/bookslikethis.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/bookslikethis/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/cancelmysub",
+    "title": "Cancel My Sub",
+    "description": "How to cancel US and UK subscriptions, the last safe day to cancel, and what a card charge is.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/cancelmysub",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/cancelmysub.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/cancelmysub/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/cheapestprice",
+    "title": "Cheapest Price",
+    "description": "The lowest current price for a product, checked live, with the typical price and links to compare.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/cheapestprice",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/cheapestprice.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/cheapestprice/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/faredeals",
+    "title": "Fare Deals",
+    "description": "Cheap flights from any city, to one place or anywhere, with the cheapest days to fly.",
+    "version": "1.4.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/faredeals",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/faredeals.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/faredeals/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/findmymoney",
+    "title": "Find My Money",
+    "description": "Find unclaimed money in the US and UK: the official free searches and how to claim.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/findmymoney",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/findmymoney.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/findmymoney/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/formguide",
+    "title": "Form Guide",
+    "description": "Football form, fixtures, results and tables for six top European leagues.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/formguide",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/formguide.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/formguide/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/gita",
+    "title": "Gita Scroller",
+    "description": "The Bhagavad Gita a few verses a day in Sanskrit with English, any verse, and the whole Gita.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/gita",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/gita.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/gita/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/gurbani",
+    "title": "Scroll the Gurbani",
+    "description": "Gurbani a few lines a day in Gurmukhi with English, any Ang or shabad, and whole banis.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/gurbani",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/gurbani.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/gurbani/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/halalornot",
+    "title": "Halal or Not",
+    "description": "Is it halal? Food, medicines, stocks, funds and crypto, with a verdict for each of the four schools.",
+    "version": "1.1.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/halalornot",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/halalornot.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/halalornot/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/jobspotter",
+    "title": "Job Spotter",
+    "description": "Search current US and UK job listings by role and place, title matches first.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/jobspotter",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/jobspotter.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/jobspotter/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/lore",
+    "title": "Scroll the Lore",
+    "description": "A Greek or Norse myth a day, explained, and Homer, Hesiod and the Poetic Edda to read.",
+    "version": "1.1.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/lore",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/lore.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/lore/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/lowermybill",
+    "title": "Lower My Bill",
+    "description": "Call scripts to lower bills in the US and UK, low-cost plans you may qualify for, and when to call.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/lowermybill",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/lowermybill.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/lowermybill/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/medbillcheck",
+    "title": "Med Bill Check",
+    "description": "Is your US medical bill fair? Compares charges with Medicare rates and drafts a dispute letter.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/medbillcheck",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/medbillcheck.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/medbillcheck/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/mizan",
+    "title": "Mizan",
+    "description": "Shariah screening of US stocks under four standards, halal alternatives, purification and zakat.",
+    "version": "1.1.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/mizan",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/mizan.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/mizan/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/planmyworkout",
+    "title": "Plan My Workout",
+    "description": "A workout plan for your goal, level, days and equipment, and how to do any exercise.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/planmyworkout",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/planmyworkout.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/planmyworkout/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/platepal",
+    "title": "Plate Pal",
+    "description": "Calories and nutrition for any food, chain meal or barcode, and meal ideas for a goal and diet.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/platepal",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/platepal.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/platepal/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/pricedropback",
+    "title": "Price Drop Back",
+    "description": "Did the price drop after you bought it? Store price-adjustment rules, deadlines and a claim message.",
+    "version": "1.4.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/pricedropback",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/pricedropback.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/pricedropback/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/spinmyday",
+    "title": "Spin My Day",
+    "description": "Plans a whole day out in any city, matched to the weather, your mood and diet.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/spinmyday",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/spinmyday.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/spinmyday/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/stoics",
+    "title": "Stoic Scroller",
+    "description": "Marcus Aurelius, Epictetus and Seneca a few lines a day, and their whole books to read.",
+    "version": "1.1.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/stoics",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/stoics.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/stoics/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/supplementcheck",
+    "title": "Supplement Check",
+    "description": "Supplement labels, doses against official upper limits, and a whole-stack check for overlaps.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/supplementcheck",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/supplementcheck.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/supplementcheck/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/syncmycycle",
+    "title": "Sync My Cycle",
+    "description": "Your likely menstrual cycle phase today and this week, with food and workout ideas.",
+    "version": "1.3.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/syncmycycle",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/syncmycycle.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/syncmycycle/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/talmud",
+    "title": "Talmud Scroller",
+    "description": "Talmud a few lines a day, explained, with today's Daf Yomi, search and tractates in English.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/talmud",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/talmud.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/talmud/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/wardrobeconnect",
+    "title": "Wardrobe Connect",
+    "description": "Find clothes that match a description or a picture on eBay, new and pre-owned.",
+    "version": "1.2.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/wardrobeconnect",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/wardrobeconnect.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/wardrobeconnect/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  }
+]

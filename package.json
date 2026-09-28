@@ -1,0 +1,16 @@
+{
+  "name": "goodturn-mcp",
+  "version": "1.0.0",
+  "description": "Remote MCP servers for 25 free, read-only Good Turn Studio helpers, generated from each product's OpenAPI spec and served from one Cloudflare Worker.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "python3 build.py && esbuild worker.mjs --bundle --format=esm --outfile=deploy/_worker.js --platform=neutral --target=es2022",
+    "test": "node test.mjs",
+    "test:live": "node alltools.mjs"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.1",
+    "esbuild": "0.24.0"
+  }
+}
