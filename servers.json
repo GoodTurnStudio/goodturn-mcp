@@ -3,8 +3,8 @@
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
     "name": "NAMESPACE/all",
     "title": "Good Turn Studio (all tools)",
-    "description": "All 25 Good Turn Studio helpers in one server: money, health, jobs, travel, halal and scripture.",
-    "version": "1.0.0",
+    "description": "All 27 Good Turn Studio helpers in one server: money, health, jobs, travel, art, halal, scripture.",
+    "version": "1.0.1",
     "websiteUrl": "https://goodturn-mcp.pages.dev",
     "icons": [
       {
@@ -694,6 +694,60 @@
       {
         "type": "streamable-http",
         "url": "https://goodturn-mcp.pages.dev/wardrobeconnect/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/fairfare",
+    "title": "Fair Fare",
+    "description": "What a taxi, Uber or Lyft should cost, airport pickup rules, and overcharge checks.",
+    "version": "1.0.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/fairfare",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/fairfare.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/fairfare/mcp"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/GoodTurnStudio/goodturn-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "NAMESPACE/artspotter",
+    "title": "Art Spotter - Eye of the Beholder",
+    "description": "Original art and prints from independent artists, fair prices, and help for artists to sell.",
+    "version": "1.0.0",
+    "websiteUrl": "https://goodturn-mcp.pages.dev/artspotter",
+    "icons": [
+      {
+        "src": "https://goodturn-mcp.pages.dev/icons/artspotter.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ]
+      }
+    ],
+    "remotes": [
+      {
+        "type": "streamable-http",
+        "url": "https://goodturn-mcp.pages.dev/artspotter/mcp"
       }
     ],
     "repository": {
